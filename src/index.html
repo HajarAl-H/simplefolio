@@ -11,335 +11,517 @@
 -->
 <!DOCTYPE html>
 <html lang="en" class="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Hajar AlHashemi | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/profile1.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.scss" />
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
+  <!-- Todo: put here your site title -->
+  <title>Hajar AlHashemi | Developer</title>
+  <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="[username], [name], skill" />
+  <!-- Todo: improve your SEO by adding a small description of you -->
+  <meta name="description" content="[Your name here] | Developer" />
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.scss" />
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
-  <body>
-    <div id="top"></div>
+  <!-- Todo: remove the below script once you finish your portfolio -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
 
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main"> Hajar AlHashemi</span>
-          <br />
-          I'm the 404 Developer (Not Found).
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
-        </p>
+<!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+
+<body>
+  <div id="top"></div>
+
+  <!-- **** Hero Section **** -->
+  <section id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title load-hidden">
+        Hi, my name is <span class="text-color-main"> Hajar AlHashemi</span>
+        <br />
+        — Developer of things you didn’t know you needed.
+      </h1>
+      <p class="hero-cta load-hidden">
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+      </p>
+    </div>
+  </section>
+  <!-- /END Hero Section -->
+
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title load-hidden">About me</h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image load-hidden">
+            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
+              src="assets/profile1.png" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info load-hidden">
+            <p class="about-wrapper__info-text">
+              <strong>Hajar Al Hashemi</strong><br>
+              Muscat, Oman<br>
+              <a href="tel:+96894016658">+968 94016658</a> |
+              <a href="mailto:alhajoor21@gmail.com">alhajoor21@gmail.com</a><br>
+              <a href="https://github.com/HajarAl-H" target="_blank">GitHub</a> |
+              <a href="https://www.linkedin.com/in/hajar-al-h" target="_blank">LinkedIn</a>
+            </p>
+
+            <p class="about-wrapper__info-text">
+              Creative Full-Stack Developer passionate about building scalable web apps, AI solutions, and IoT
+              dashboards. Skilled in Laravel, Node.js, Python, and modern frontend frameworks. Experienced with Docker,
+              APIs, and Linux/Windows servers.
+            </p>
+
+            <p class="about-wrapper__info-text">
+              <strong>Tech Stack:</strong>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Redis</span>
+            </p>
+
+            <span class="d-flex mt-3">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="#projects">
+                View Projects
+              </a>
+            </span>
+          </div>
+
+        </div>
       </div>
-    </section>
-    <!-- /END Hero Section -->
+    </div>
+  </section>
+  <!-- /END About Section -->
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
+  <!-- **** Projects Section **** -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">
+                  MUAIN Public Service & CRM System
+                  <span class="status-tag ongoing">Ongoing</span>
+                </h3>
+                <p class="mb-4">
+                  Developed secure Laravel-based CRM integrated with ministry services. Implemented identity
+                  verification with PKI and multi-channel workflows (web, mobile, WhatsApp).
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Laravel (PHP)</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">Blade</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Flutter (Mobile)</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">PKI</span>
+                    <span class="skill-tag">Bank Muscat Gateway</span>
+                    <span class="skill-tag">Ministry of Commerce</span>
+                    <span class="skill-tag">Injaz Disputes Services</span>
+                  </p>
+                </div>
+              </div>
+              <div class="project-images">
+                <img src="assets/crm-1.png" alt="Project 1 Image" class="project-thumbnail">
+                <img src="assets/crm-4.png" alt="Project 2 Image" class="project-thumbnail">
+                <img src="assets/crm-5.png" alt="Project 2 Image" class="project-thumbnail">
+
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
-              </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Virtual Assistant Chatbot (Meta WhatsApp Channel)
+                  <span class="status-tag completed">Completed</span>
+
+                </h3>
+                <p class="mb-4">
+                  Built intelligent chatbot with backend automation and frontend session management for web and mobile.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Laravel (PHP)</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">Livewire</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Flutter</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">Meta WhatsApp API</span>
+                  </p>
+                </div>
+              </div>
+              <div class="project-images">
+                <img src="assets/meta-1.png" alt="Project 2 Image" class="project-thumbnail">
+                <img src="assets/meta-2.png" alt="Project 2 Image" class="project-thumbnail">
+                <img src="assets/meta-3.png" alt="Project 2 Image" class="project-thumbnail">
+                <img src="assets/meta-4.png" alt="Project 2 Image" class="project-thumbnail">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+        <!-- Row 2 -->
+        <div class="row">
+          <!-- Project 3 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">AI WhatsApp Chatbot using OpenAI
+                  <span class="status-tag completed">Completed</span>
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
-                <div>
-                  <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                </h3>
+                <p class="mb-4">
+                  Developed Node.js chatbot with GPT integration for natural conversations and Puppeteer automation for
+                  session handling.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Node.js</span></p>
+                  <p><strong>Frontend:</strong> <span class="skill-tag">WhatsApp UI</span></p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">OpenAI GPT</span>
+                    <span class="skill-tag">wwebjs</span>
+                  </p>
+                  <p><strong>Tools:</strong>
+                    <span class="skill-tag">Puppeteer</span>
+                    <span class="skill-tag">Redis</span>
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
               </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
+              <div class="project-images">
+                <img src="assets/ai-2.png" alt="Project 3 Image" class="project-thumbnail">
+                <img src="assets/ai-3.png" alt="Project 3 Image" class="project-thumbnail">
               </div>
             </div>
           </div>
-          <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
-                <div>
-                  <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+          <!-- Project 4 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Webhook Listener & Forwarder
+                  <span class="status-tag completed">Completed</span>
+
+                </h3>
+                <p class="mb-4">
+                  Built Express.js service to capture, log, and forward webhook payloads for WhatsApp integration
+                  testing.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">Meta Webhooks</span>
+                  </p>
+                  <p><strong>Tools:</strong>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">Docker</span>
                   </p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+        <!-- Row 3 -->
+        <div class="row">
+          <!-- Project 5 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">IoT Soil Moisture Monitoring Dashboard
+                  <span class="status-tag completed">Completed</span>
+                </h3>
+                <p class="mb-4">
+                  Built PHP-based dashboard for real-time monitoring of soil moisture data collected from IoT sensors.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Pure PHP</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">IoT Sensors</span>
+                  </p>
+                  <p><strong>Tools:</strong>
+                    <span class="skill-tag">MySQL</span>
+                  </p>
+                </div>
+              </div>
+              <div class="project-images">
+                <img src="assets/iot-1.png" alt="Project 5 Image" class="project-thumbnail">
+                <img src="assets/iot-2.png" alt="Project 5 Image" class="project-thumbnail">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Battery Group E-Commerce Platform
+                  <span class="status-tag paused">Paused</span>
+
+                </h3>
+                <p class="mb-4">
+                  Built full-stack web app for selling batteries with location picker, price comparison, and WhatsApp
+                  ordering.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Laravel (PHP)</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">Blade</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">JavaScript</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">Google Maps API</span>
+                    <span class="skill-tag">WhatsApp API</span>
+                    <span class="skill-tag">OpenAI GPT</span>
+
+                  </p>
+                </div>
+              </div>
+              <div class="project-images">
+                <img src="assets/battery-1.png" alt="Project 6 Image" class="project-thumbnail">
+                <img src="assets/battery-2.png" alt="Project 6 Image" class="project-thumbnail">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
+        <!-- Row 4 -->
+        <div class="row">
+          <!-- Project 7 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Odoo ERP Customizations
+                  <span class="status-tag ongoing">Ongoing</span>
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+                </h3>
+                <p class="mb-4">
+                  Customized Odoo modules for HR and Sales, integrated with existing systems and workflows.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Odoo (Python)</span></p>
+                  <p><strong>Frontend:</strong> <span class="skill-tag">Odoo Views</span></p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">SOAP APIs</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Next.js To-Do App
+                  <span class="status-tag completed">Completed</span>
+
+                </h3>
+                <p class="mb-4">
+                  Built a small full-stack to-do list app with Next.js frontend and Nest.js backend.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Nest.js</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">Next.js</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="row">
+          <!-- Project 9 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Automatic Bell System
+                  <span class="status-tag completed">Completed</span>
+
+                </h3>
+                <p class="mb-4">
+                  Designed a microcontroller-based automatic bell system using IC 555 for scheduled ringing.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Tools & Hardware:</strong> <span class="skill-tag">IC 555</span> <span
+                      class="skill-tag">Timers</span> <span class="skill-tag">Circuit Design</span> </p>
+                </div>
+
+              </div>
+              <div class="project-images">
+                <img src="assets/bell-1.png" alt="Project 8 Image" class="project-thumbnail">
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">Locust Swarm Detection
+                  <span class="status-tag completed">Completed</span>
+
+                </h3>
+                <p class="mb-4">
+                  Implemented image processing system for early detection of locust swarms in crops.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">Python</span></p>
+                  <p><strong>Tools & Libraries:</strong> <span class="skill-tag">OpenCV</span> <span
+                      class="skill-tag">NumPy</span> <span class="skill-tag">MATLAB</span> </p>
+                </div>
+              </div>
+              <div class="project-images">
+                <img src="assets/locast-1.png" alt="Project 8 Image" class="project-thumbnail">
+                <img src="assets/locast-2.png" alt="Project 8 Image" class="project-thumbnail">
+                <img src="assets/locast-3.png" alt="Project 8 Image" class="project-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="row">
+          <!-- Project 11 -->
+          <div class="col-lg-6 col-md-12 mb-4">
+            <div class="project-wrapper__text load-hidden project-flex">
+              <div class="project-text">
+                <h3 class="project-wrapper__text-title">OncoSecure (Breast Cancer AI Protection)
+                  <span class="status-tag ongoing">Ongoing</span>
+
+                </h3>
+                <p class="mb-4">
+                  Developed an AI system for breast cancer protection. Backend built with pure PHP, frontend with
+                  Bootstrap, HTML, CSS, and JavaScript. Integrated a predictive AI model using a public dataset.
+                </p>
+                <div class="project-tags">
+                  <p><strong>Backend:</strong> <span class="skill-tag">PHP</span></p>
+                  <p><strong>Frontend:</strong>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                  </p>
+                  <p><strong>APIs & Integrations:</strong>
+                    <span class="skill-tag">Breast Cancer Wisconsin Dataset (WDBC)</span>
+                    <span class="skill-tag">Flask API</span>
+                  </p>
+                  <p><strong>AI Model:</strong>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Logistic Regression</span>
+                    <span class="skill-tag">Random Forest</span>
+                    <span class="skill-tag">Pickle</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="lightbox-img">
+    </div>
+  </section>
+  <!-- /END Projects Section -->
+
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper load-hidden">
+        <p class="contact-wrapper__text">Feel free to reach out for business, collaboration, or just to say hello!</p>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:alhajoor21@gmail.com">Email
+          Me</a>
+        <p class="contact-wrapper__text mt-2">Or call: <a href="tel:+96894016658">+968 94016658</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a rel="noreferrer" href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a rel="noreferrer" href="https://www.linkedin.com/in/hajar-al-h" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
         </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+        <a rel="noreferrer" href="https://github.com/HajarAl-H" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
       </div>
-    </footer>
-    <!-- /END Footer Section -->
 
-    <script defer type="module" src="index.js"></script>
-  </body>
+      <hr />
+
+
+      <!-- /END Footer Section -->
+
+      <script defer type="module" src="index.js"></script>
+      <!-- Your other HTML content -->
+
+      <!-- Lightbox JavaScript -->
+      <script>
+        const modal = document.getElementById("lightbox-modal");
+        const modalImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close");
+
+        document.querySelectorAll(".project-thumbnail").forEach(img => {
+          img.addEventListener("click", e => {
+            modal.style.display = "block";
+            modalImg.src = e.target.src;
+          });
+        });
+
+        closeBtn.onclick = () => modal.style.display = "none";
+        window.onclick = e => { if (e.target == modal) modal.style.display = "none"; };
+
+      </script>
+
+
+</body>
+
 </html>

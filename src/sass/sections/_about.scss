@@ -1,16 +1,31 @@
 #about {
   background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
+  background-image: linear-gradient(135deg,
+      $primary-color 0%,
+      $secondary-color 100%);
   color: $white-color;
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
+
+  .skill-tag {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: default;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+      transform: translateY(-2px);
+    }
+  }
 
   @include respond(tab-land) {
     height: 100%;
@@ -32,6 +47,7 @@
       @include respond(tab-land) {
         height: 100%;
       }
+
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
@@ -53,6 +69,7 @@
         @include respond(tab-port) {
           text-align: left;
         }
+
         @include respond(tab-port-sm) {
           text-align: center;
         }

@@ -1,8 +1,144 @@
 #projects {
-  background-color: $white-color;
+  background-color: $secondary-color;
   color: $dark-blue-text;
   margin-top: -10rem;
   padding-top: 15rem;
+
+  .project-images {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    .project-thumbnail {
+      width: 30%;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .skill-tag {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: default;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+      transform: translateY(-2px);
+    }
+  }
+
+  .status-tag {
+    display: inline-block;
+    background-color: #ff9800;
+    /* orange for ongoing */
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .status-tag.completed {
+    background-color: #4caf50;
+    /* green for completed */
+  }
+
+  .status-tag.ongoing {
+    background-color: #ff9800;
+    /* orange for ongoing */
+  }
+
+  .status-tag.paused {
+    background-color: #f44336;
+    /* red for paused */
+  }
+
+  /* Lightbox Modal */
+  #lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  #lightbox-modal .modal-content {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    /* keep natural width */
+    max-width: 30%;
+    /* same as thumbnail width */
+    height: auto;
+    /* keep aspect ratio */
+    max-height: none;
+    /* do not scale height */
+    border-radius: 8px;
+  }
+
+  #lightbox-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .project-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      flex-direction: column; // stack on smaller screens
+    }
+
+    .project-images {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .project-thumbnail {
+        width: 100px; // adjust thumbnail size
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .project-text {
+      flex: 1; // takes remaining space
+    }
+  }
+
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -30,6 +166,7 @@
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
       }
+
       @include respond(tab-land) {
         margin-bottom: 4.8rem;
       }
@@ -44,7 +181,7 @@
         }
       }
 
-      & p > a {
+      & p>a {
         color: $secondary-color;
       }
     }
