@@ -144,10 +144,9 @@
                 </div>
               </div>
               <div class="project-images">
-                <img src="assets/crm-1.png" alt="Project 1 Image" class="project-thumbnail">
-                <img src="assets/crm-4.png" alt="Project 2 Image" class="project-thumbnail">
-                <img src="assets/crm-5.png" alt="Project 2 Image" class="project-thumbnail">
-
+                <img src="assets/crm-1.png" alt="CRM Image" class="project-thumbnail">
+                <img src="assets/crm-4.png" alt="CRM Image" class="project-thumbnail">
+                <img src="assets/crm-5.png" alt="CRM Image" class="project-thumbnail">
               </div>
             </div>
           </div>
@@ -461,7 +460,7 @@
     <!-- Lightbox Modal -->
     <div id="lightbox-modal" class="modal">
       <span class="close">&times;</span>
-      <img class="modal-content" id="lightbox-img">
+      <img id="lightbox-img" class="modal-content">
     </div>
   </section>
   <!-- /END Projects Section -->
@@ -511,15 +510,20 @@
 
         document.querySelectorAll(".project-thumbnail").forEach(img => {
           img.addEventListener("click", e => {
-            modal.style.display = "block";
+            modal.style.display = "flex";
             modalImg.src = e.target.src;
+            modalImg.style.width = "auto"; // normal image width
+            modalImg.style.height = "auto"; // normal image height
           });
         });
 
         closeBtn.onclick = () => modal.style.display = "none";
-        window.onclick = e => { if (e.target == modal) modal.style.display = "none"; };
 
+        window.onclick = e => {
+          if (e.target == modal) modal.style.display = "none";
+        };
       </script>
+
 
 
 </body>
