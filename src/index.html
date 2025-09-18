@@ -1,14 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
+
 <!DOCTYPE html>
 <html lang="en" class="sr">
 
@@ -28,12 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles.scss" />
   <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-  <!-- Todo: remove the below script once you finish your portfolio -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
-<!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
 
 <body>
   <div id="top"></div>
@@ -498,29 +484,9 @@
       <!-- /END Footer Section -->
 
       <script defer type="module" src="index.js"></script>
-      <!-- Your other HTML content -->
 
-      <!-- Lightbox JavaScript -->
-      <script>
-        const modal = document.getElementById("lightbox-modal");
-        const modalImg = document.getElementById("lightbox-img");
-        const closeBtn = document.querySelector(".close");
-
-        document.querySelectorAll(".project-thumbnail").forEach(img => {
-          img.addEventListener("click", e => {
-            modal.style.display = "flex";
-            modalImg.src = e.target.src;
-            modalImg.style.width = "auto"; // normal image width
-            modalImg.style.height = "auto"; // normal image height
-          });
-        });
-
-        closeBtn.onclick = () => modal.style.display = "none";
-
-        window.onclick = e => {
-          if (e.target == modal) modal.style.display = "none";
-        };
-      </script>
+      <!-- Lightbox JavaScript -->     
+      <script src="assets/js/lightbox.js"></script>
 
 
 
